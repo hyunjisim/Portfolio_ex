@@ -24,19 +24,20 @@
 </head>
 <body>
     <!-- header -->
-    <header>
-        <div>
-            <img src="./images/hyunji.ico" alt="logo">
-            <h1><a href="#">Hyunji</a></h1>
+    <header class="header">
+        <!-- BEM -->
+        <div class="header__logo">
+            <img class="header__logo__img" src="./images/hyunji.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">Hyunji</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About Me</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Project">Project</a></li>
-                <li><a href="#License">License</a></li>
-                <li><a href="#Contact">Contact</a></li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#Home" class="header__menu__item active">Home</a></li>
+                <li><a href="#About" class="header__menu__item active">About Me</a></li>
+                <li><a href="#Skills"class="header__menu__item active">Skills</a></li>
+                <li><a href="#Project"class="header__menu__item active">Project</a></li>
+                <li><a href="#License"class="header__menu__item active">License</a></li>
+                <li><a href="#Contact"class="header__menu__item active">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -50,9 +51,9 @@
             <a href="#Contact">Contact Me<i class="fa-solid fa-phone"></i></a>
         </section>
         <!-- About -->
-        <section id="About">
-            <h2>심현지</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quia obcaecati, laboriosam optio ad corporis nostrum dolores maxime beatae maiores praesentium. Ipsum, hic. Nam beatae expedita voluptates error odit dolorum.</p>
+        <section id="About" class="section max-container">
+            <h2 class="title">심현지</h2>
+            <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quia obcaecati, laboriosam optio ad corporis nostrum dolores maxime beatae maiores praesentium. Ipsum, hic. Nam beatae expedita voluptates error odit dolorum.</p>
             <ul>
                 <li>
                     <i class="fa-brands fa-html5"></i></a>
@@ -81,9 +82,10 @@
             </ul>
         </section>
         <!-- Skills -->
-        <section id="Skills">
-            <h2>Skills</h2>
-            <p>Python</p>
+        <section id="Skills" class="section ">
+            <div class="max-container">
+            <h2 class="title">Skills</h2>
+            <p class="description">Programing Languages</p>
             <div>
                 <section>
                     <h3>언어</h3>
@@ -155,10 +157,11 @@
                         </ul>
                 </section>
             </div>
+            </div>
         </section>
         <!-- Project -->
-        <section id="Project">
-            <h2>Project</h2>
+        <section id="Project" class="section max-container">
+            <h2 class="title">Project</h2>
             <ul>
                 <li><button>ALL <span>14</span></button></li>
                 <li><button>Front-End <span>2</span></button></li>
@@ -251,9 +254,9 @@
             </ul>
         </section>
         <!-- License -->
-        <section id="License">
-            <h2>License</h2>
-            <p>국가 기술 자격증</p>
+        <section id="License"class="section max-container">
+            <h2 class="title">License</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li>
                     <img src="" alt="">
@@ -274,15 +277,17 @@
         </aside>
     </main>
     <!-- footer -->
-    <footer id="Contact">
-        <h2>contact</h2>
+    <footer id="Contact" class="section">
+        <div class="max-container">
+        <h2 class="title">contact</h2>
         <p>tlaguswl3461@gmail.com <i class="fa-regular fa-envelope"></i> </p>
-        <p>010-6294-3460</p>
+        <p>010-6294-3460<i class="fa-solid fa-phone-flip"></i></p>
         <ul>
             <li><a href="https://github.com/hyunjisim" target="_blank" title="Git Hub">Git Hub <i class="fa-brands fa-github"></i></a></li>
             <li><a href=""></a></li>
         </ul>
-        <p>ⓒHyunji - All rights reserved</p>
+        <p class="description">ⓒHyunji - All rights reserved</p>
+        </div>
     </footer>
 </body>
 </html>

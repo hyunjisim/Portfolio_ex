@@ -54,29 +54,36 @@
         <section id="About" class="section max-container">
             <h2 class="title">심현지</h2>
             <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam quia obcaecati, laboriosam optio ad corporis nostrum dolores maxime beatae maiores praesentium. Ipsum, hic. Nam beatae expedita voluptates error odit dolorum.</p>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-html5"></i></a>
-                    <p>Front-end</p>
+            <ul class="majors">
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i></a>
+                    <p class="major__title">Front-end</p>
                     <p>Html, CSS, JavaScript,Node.js, React-Native</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i></a>
-                    <p>Mobile</p>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i></a>
+                    <p class="major__title">Mobile</p>
                     <p>~~~</p>
                 </li>
-                <li>
-                    <i class="fa-brands fa-github"></i></a>
-                    <p>Back-end</p>
+                <li class="major">
+                    <i class="fa-brands fa-github major__icon"></i></a>
+                    <p class="major__title">Back-end</p>
                     <p>node.js, FastAPI, Java</p>
                 </li>
             </ul>
-            <ul>
-                <li>
+            <ul class="jobs">
+                <li class="job">
                     <img src="./images/popo.png" alt="popo logo">
                     <div>
-                        <p>포포 피씨방 노량진 1호점</p>
-                        <p>2021 ~ 2024</p>
+                        <p class="job__name">포포 피씨방 노량진 1호점</p>
+                        <p class="job__period">2021 ~ 2024</p>
+                    </div>
+                </li>
+                <li class="job">
+                    <img src="./images/popo.png" alt="popo logo">
+                    <div>
+                        <p class="job__name">포포 피씨방 노량진 1호점</p>
+                        <p class="job__period">2021 ~ 2024</p>
                     </div>
                 </li>
             </ul>
@@ -84,79 +91,95 @@
         <!-- Skills -->
         <section id="Skills" class="section ">
             <div class="max-container">
-            <h2 class="title">Skills</h2>
-            <p class="description">Programing Languages</p>
-            <div>
-                <section>
-                    <h3>언어</h3>
-                        <ul>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                            <li>
-                                <div><span>HTML</span><span>90%</span></div>
-                                <div><div style="width: 98%;"></div></div>
-                            </li>
-                        </ul>
-                </section>
-                <section>
-                    <h3>도구</h3>
-                        <ul>
-                            <li>Visual Stidio Code</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                </section>
-                <section>
-                    <h3>기타</h3>
-                        <ul>
-                            <li>Photo shop</li>
-                            <li>Illustrator</li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                </section>
-            </div>
+                <h2 class="title">Skills</h2>
+                <p class="description">Programing Languages</p>
+                <div>
+                    <section class="skills__coding">
+                        <h3 class="skills__title">언어</h3>
+                            <ul>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>HTML</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div bar__value style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>C</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div bar__value style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>Java</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div bar__value style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>Python</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div bar__value style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>CSS</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div bar__value style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="bar">
+                                    <div class="bar__metadata">
+                                        <span>SQL</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="bar__bg">
+                                        <div bar__value style="width: 98%;">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                    </section>
+                    <section class="skills__tools">
+                        <h3 class="skills__title">도구</h3>
+                            <ul>
+                                <li>Visual Stidio Code</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                    </section>
+                    <section class="skills__etc">
+                        <h3 class="skills__title">기타</h3>
+                            <ul>
+                                <li>Photo shop</li>
+                                <li>Illustrator</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                    </section>
+                </div>
             </div>
         </section>
         <!-- Project -->

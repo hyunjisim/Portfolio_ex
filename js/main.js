@@ -28,14 +28,19 @@ document.addEventListener('scroll',()=>{
     }
 })
 
-//nav바 토글버튼 클릭 처리
-const navbarMenu = document.querySelector('.header__menu')
-const navbarToggle = document.querySelectorAll('.header__menu__item')
-navbarToggle.addEventListener('click',()=>{
-    navbarMenu.classList.toggle('open')
-})
+// nav바 토글 버튼 클릭 처리
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle');
 
-//navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
-navbarMenu.addEventListener('click',()=>{
-    navbarMenu.classList.toggle('close')
-})
+// 토글 버튼 클릭 시 메뉴 열고 닫기
+navbarToggle.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
+// 메뉴 아이템 클릭 시 메뉴 닫기
+const menuItems = document.querySelectorAll('.header__menu__item');
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navbarMenu.classList.remove('open');
+    });
+});

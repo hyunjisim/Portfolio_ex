@@ -16,6 +16,7 @@
     <meta property="og:image" content="배포후 생성된 이미지 URL">
     <!-- JavaScript -->
     <script src="./js/main.js" defer ></script>
+    <script src="./js/project.js" defer ></script>
     <!-- defer: 다 읽고 나서 자바스크립트 처리 -->
     <!-- Web Fonts -->
     <!-- https://noonnu.cc/ -->
@@ -195,23 +196,23 @@
             <p class="description">My Projects</p>
             <ul class="categories">
                 <li>
-                    <button class="category category--selected">ALL <span class="category__count">14</span></button>
+                    <button onclick="" class="category category--selected" data-category="all">ALL <span class="category__count">14</span></button>
                 </li>
                 <li>
-                    <button class="category">front-end <span class="category__count">2</span></button>
+                    <button onclick="" class="category" data-category="front-end">front-end <span class="category__count">2</span></button>
                 </li>
                 <li>
-                    <button class="category">mobile <span class="category__count">3</span></button>
+                    <button onclick="" class="category" data-category="mobile">mobile <span class="category__count">3</span></button>
                 </li>
                 <li>
-                    <button class="category">AI <span class="category__count">5</span></button>
+                    <button onclick="" class="category" data-category="AI">AI <span class="category__count">5</span></button>
                 </li>
                 <li>
-                    <button class="category">UX UI <span class="category__count">7</span></button>
+                    <button onclick="" class="category" data-category="UX UI">UX UI <span class="category__count">7</span></button>
                 </li>
             </ul>
             <ul class="projects">
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -220,7 +221,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -229,7 +230,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="front-end">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -238,7 +239,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="UX UI">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -247,7 +248,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="UX UI">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -256,7 +257,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="UX UI">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -265,7 +266,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="UX UI">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">
@@ -274,7 +275,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="project">
+                <li class="project" data-type="AI">
                     <a href="#" target="_blank">
                         <img src="./images/project_1.png" alt="project_안농하농" class="project__img">
                         <div class="project__meta">

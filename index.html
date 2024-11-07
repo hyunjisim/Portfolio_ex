@@ -14,6 +14,9 @@
     <meta property="og:type" content="web site">
     <meta property="og:url" content="배포후 생성된 URL">
     <meta property="og:image" content="배포후 생성된 이미지 URL">
+    <!-- JavaScript -->
+    <script src="./js/main.js" defer ></script>
+    <!-- defer: 다 읽고 나서 자바스크립트 처리 -->
     <!-- Web Fonts -->
     <!-- https://noonnu.cc/ -->
     <link rel="stylesheet" href="./CSS/style.css">
@@ -40,15 +43,20 @@
                 <li><a href="#Contact"class="header__menu__item">Contact</a></li>
             </ul>
         </nav>
+        <button class="header__toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
     <!-- main -->
     <main>
         <!-- Home -->
         <section id="Home">
-            <img class="Home__avatar" src="./images/hyunji.jpg" alt="Hyunji's profile">
-            <h2 class="Home__title">안녕하세요. 주니어 개발자 <br> <strong class="Home__title--strong">심현지</strong>입니다.</h2>
-            <p class="Home__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero qui, optio possimus architecto deserunt dolor unde? Aut, pariatur temporibu</p>
-            <a class="Home__contact" href="#Contact">Contact Me<i class="fa-solid fa-phone"></i></a>
+            <div class="home__container">
+                <img class="Home__avatar" src="./images/hyunji.jpg" alt="Hyunji's profile">
+                <h2 class="Home__title">안녕하세요. 주니어 개발자 <br> <strong class="Home__title--strong">심현지</strong>입니다.</h2>
+                <p class="Home__description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero qui, optio possimus architecto deserunt dolor unde? Aut, pariatur temporibu</p>
+                <a class="Home__contact" href="#Contact">Contact Me<i class="fa-solid fa-phone"></i></a>
+            </div>
         </section>
         <!-- About -->
         <section id="About" class="section max-container">
